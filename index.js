@@ -19,8 +19,8 @@ const makeCommits = (n) => {
   if (n === 0) return simpleGit().push();
 
   // Tạo thời gian ngẫu nhiên từ ngày 1/7/2023 đến 30/9/2023
-  const start = moment("2023-03-01");
-  const end = moment("2023-12-30");
+  const start = moment("2024-01-17");
+  const end = moment("2024-12-07");
   const randomDate = moment(random.int(start.valueOf(), end.valueOf())).format();
 
   console.log(randomDate);
@@ -34,4 +34,4 @@ const makeCommits = (n) => {
   });
 };
 
-makeCommits(269);
+makeCommits(185);
